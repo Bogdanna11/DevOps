@@ -177,6 +177,7 @@ print(f” you scored {score/max_score: .0%}”)
 # result rounding up 62 %
 
 a = True 
+
 b = False 
 
 print(a == b) 
@@ -185,13 +186,19 @@ print( a >= b)
 print(a!=b)
 
 print(True and False)
+
 print(True or False)
+
 print(False and True) 
 
 hi = “Hello world”
+
 print(hi.isalpha())
+
 print(hi.islower())
+
 print(hi.endswith(“!”))
+
 print(hi.startswith(“H”))
 
 x = 0
@@ -220,5 +227,35 @@ shopping_list.apped(‘carrots)
 
 print(shopping_list)
 
+shopping_list.remove(“bread”)
+
+shopping_list.pop()
+
+Lists can contain any number of data types ; 
+
+mixture = [1,2,3,”one”,”three”]
+
+We can do slicing as well 
+
+print(mixture[1:3])
+print(mixtture[-2::]
+print(mixture[::2])
+
+
+TUPLES — they are immutable 
+
+foods = (“bread”,”milk”,”eggs”)
+foods.count(“eggs”)
+
+# the only methods available are : index and count in tuples
+
+DICTIONARIES : 
+
+student_1 = {
+ “name”: “Suzan”,
+ “stream”: “teach”,
+“completed_lessons: 4,
+“courses”: [“SQL”,”Python,”C”]
+}
 
       
