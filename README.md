@@ -258,4 +258,19 @@ student_1 = {
 “courses”: [“SQL”,”Python,”C”]
 }
 
+SETS : 
+car_parts = {“wheels”,”doors”,”Exhaust”}
+print(car_parts)
+
+car_parts.add(“windows”)
+print(car_parts)
+
+# adds items RANDOMY
+#it has all the usual methods
+
+cars_parts.discard(“doors”)
+
+
+
+
       
