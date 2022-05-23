@@ -1,6 +1,8 @@
 class Car:
-    def __init__(self, current_speed):
+    def __init__(self, current_speed,breake,accelerate):
         self.max_speed = 150
+        self.breake = breake
+        self.accelerate = accelerate
         self.current_speed = current_speed
     def get_this(self):
         return self.current_speed
@@ -19,11 +21,12 @@ class Car:
 
     def __repr__(self):
         print(f"the car's speed is {self.current_speed}, if I accelerate it will be {self.set_accelerate},if I  breake it will be {self.set_brake}")
-    
 
 
-new_car = Car(50)
+
+new_car = Car(50,3,40)
 new_car.set_brake(3)
 new_car.set_accelerate(30)
 print(new_car)
+
 
