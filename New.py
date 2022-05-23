@@ -1,16 +1,17 @@
-user_prompt = True
-my_username = "rusbogdana@yahoo.com"
-password = "pass1"
-while user_prompt:
-    username = input("What is your username")
-    if username.lower() == my_username:
-        print("well done the username is true")
-        user_password = input("please enter password")
-        if user_password == password:
-            print("Well done this is the correct password")
-            user_prompt = False
-            break
-        else:
-            print("Enter the password again")
-    else:
-        print("Please provide the correct username")
+def multi_args_addition(*multiargs):
+    sum = 0
+    for arg in multiargs:
+        sum+=arg
+    return sum
+def substraction(x,y):
+    return x-y
+def multi_args_multiplication(*multiargs):
+     result = 1
+     for arg in multiargs:
+         result *=arg
+     return result
+def division(x,y):
+    return x/y
+print(multi_args_addition(3,4,5,6,4))
+print(multi_args_multiplication(1,2,2))
+print(substraction(5,2))
