@@ -26,3 +26,7 @@ new_car.set_accelerate(40)
 print(new_car)
 new_car.set_brake(3)
 print(new_car)
+
+
+
+
