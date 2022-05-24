@@ -7,7 +7,6 @@
         return self.current_speed
     def set_accelerate(self, accelerate):
         if accelerate < self.max_speed:
-            accelerate = self.max_speed - self.current_speed
             self.current_speed = self.current_speed + accelerate
         else:
             self.accelerate = self.max_speed     
