@@ -1,4 +1,5 @@
- def __init__(self, current_speed):
+ class Car:
+    def __init__(self, current_speed):
         self.max_speed = 150
         self.current_speed = current_speed
     def __repr__(self):
@@ -6,15 +7,17 @@
     def get_this(self):
         return self.current_speed
     def set_accelerate(self, accelerate):
-        if accelerate < self.max_speed:
+        if accelerate > self.max_speed:
+            accelerate = self.max_speed - self.current_speed
             self.current_speed = self.current_speed + accelerate
-            if self.current_speed = 150:
-               break          
-        else:
-            self.accelerate = self.max_speed     
-            self.current_speed = self.accelerate
-    
             
+        else:
+            self.current_speed = self.current_speed + accelerate
+            if self.current_speed >=self.max_speed:
+               self.current_speed = self.max_speed
+               print("You can't accelerate more than 150")
+
+
 
     def set_brake(self, breake):
         if breake > 0:
