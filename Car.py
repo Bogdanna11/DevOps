@@ -8,9 +8,11 @@
     def set_accelerate(self, accelerate):
         if accelerate < self.max_speed:
             self.current_speed = self.current_speed + accelerate
+            if self.current_speed = 150:
+               break          
         else:
             self.accelerate = self.max_speed     
-            self.current_speed = self.current_speed + accelerate
+            self.current_speed = self.accelerate
     
             
 
